@@ -7,7 +7,7 @@ export const model = new OpenRouter({
 
 export async function generateContent(message) {
   const stream = await model.chat.send({
-    model: "deepseek/deepseek-r1-0528:free",
+    model: "xiaomi/mimo-v2-flash:free",
     messages: [{ role: "user", content: message }],
     stream: false,
   });
