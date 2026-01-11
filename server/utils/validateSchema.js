@@ -1,4 +1,5 @@
 import Ajv from "ajv";
+import AppError from "./AppError.js";
 
 const ajv = new Ajv();
 
@@ -7,8 +8,9 @@ export function validateSchema(schema, data) {
   const valid = validate(data);
 
   if (!valid) {
-    throw new Error(
-      "Schema validation failed: " + ajv.errorsText(validate.errors)
+    throw new AppError(
+      "Schema validation failed: " + ajv.errorsText(validate.errors),
+      502
     );
   }
 

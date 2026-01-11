@@ -1,16 +1,15 @@
 import express from "express";
 import { tagNote } from "../services/tagNote.service.js";
+import AppError from "../utils/AppError.js";
 
 const router = express.Router();
 
-router.post("/tag-note", async (req, res) => {
+router.post("/tag-note", async (req, res, next) => {
   const { note } = req.body;
 
+  // Request validation
   if (!note || typeof note !== "string") {
-    return res.status(400).json({
-      success: false,
-      error: "note is required and must be a string",
-    });
+    return next(new AppError("note is required and must be a string", 400));
   }
 
   try {
@@ -23,10 +22,7 @@ router.post("/tag-note", async (req, res) => {
       },
     });
   } catch (err) {
-    res.status(500).json({
-      success: false,
-      error: err.message,
-    });
+    next(err); // Global error handler devreye giriyor
   }
 });
 

@@ -1,7 +1,9 @@
+import AppError from "./AppError.js";
+
 export function safeJsonParse(text) {
   try {
     return JSON.parse(text);
   } catch {
-    throw new Error("AI returned invalid JSON");
+    throw new AppError("AI returned invalid JSON", 502);
   }
 }
