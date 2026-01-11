@@ -10,6 +10,7 @@ RULES:
 - Do NOT add markdown
 - Language of tags must be English
 - Tags must be short and meaningful
+- maximum 5 tags
 
 OUTPUT FORMAT:
 {
