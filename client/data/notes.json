@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "AI Note Tagger Fikri",
+    "content": "Notların içeriğini analiz edip otomatik etiketleyen küçük ama etkili bir sistem. İlk etapta sadece başlık ve içerik üzerinden çalışması yeterli.",
+    "tags": ["ai", "nodejs", "express"]
+  },
+  {
+    "id": 2,
+    "title": "UI İlham",
+    "content": "Pinterest ve Notion karışımı, simetrik olmayan kart yapıları daha canlı hissettiriyor.",
+    "tags": ["ui", "ux"]
+  },
+  {
+    "id": 3,
+    "title": "Backend Planı",
+    "content": "Önce basit bir REST API. Auth yok. CRUD var. Daha sonra kullanıcı bazlı hale getirilebilir. MongoDB ilk tercih gibi duruyor çünkü schema esnekliği işime yarayacak.",
+    "tags": ["backend", "api", "mongodb", "plan"]
+  },
+  {
+    "id": 4,
+    "title": "Kısa Not",
+    "content": "Bugün Tailwind bayağı keyifliydi.",
+    "tags": ["günlük"]
+  },
+  {
+    "id": 5,
+    "title": "Uzun Uzun Düşünceler",
+    "content": "Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.",
+    "tags": ["thoughts", "productivity", "dev"]
+  },
+  {
+    "id": 6,
+    "title": "Tag Testi",
+    "content": "Bu not sadece çok tag olduğunda nasıl göründüğünü test etmek için.",
+    "tags": ["test", "tag", "ui", "layout", "grid", "tailwind"]
+  },
+  {
+    "id": 7,
+    "title": "Uzun Uzun Düşünceler",
+    "content": "Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.",
+    "tags": ["thoughts", "productivity", "dev"]
+  },
+  {
+    "id": 8,
+    "title": "Uzun Uzun Düşünceler",
+    "content": "Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.",
+    "tags": ["thoughts", "productivity", "dev"]
+  },
+  {
+    "id": 9,
+    "title": "Uzun Uzun Düşünceler",
+    "content": "Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.",
+    "tags": ["thoughts", "productivity", "dev"]
+  },
+  {
+    "id": 10,
+    "title": "Uzun Uzun Düşünceler",
+    "content": "Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.",
+    "tags": ["thoughts", "productivity", "dev"]
+  },
+  {
+    "id": 11,
+    "title": "Uzun Uzun Düşünceler",
+    "content": "Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.",
+    "tags": ["thoughts", "productivity", "dev"]
+  },
+  {
+    "id": 12,
+    "title": "Uzun Uzun Düşünceler",
+    "content": "Bazen projeyi büyütmeden önce sadece küçük parçalara odaklanmak gerekiyor. UI, backend, veri modeli… Hepsi ayrı ayrı düşünülmeli ama birlikte çalışmalı.",
+    "tags": ["thoughts", "productivity", "dev"]
+  }
+]
