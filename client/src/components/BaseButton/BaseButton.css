@@ -1,0 +1,76 @@
+@reference "tailwindcss/theme.css";
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2
+    rounded-full font-semibold select-none
+    transition-all duration-300;
+}
+
+.btn:not(.is-disabled) {
+  @apply cursor-pointer;
+}
+
+/* SIZES */
+.btn--sm {
+  @apply px-3 py-1.5 text-sm;
+}
+.btn--md {
+  @apply px-5 py-2.5 text-sm;
+}
+.btn--lg {
+  @apply px-7 py-3 text-base;
+}
+
+/* COLORS (SEMANTIC) */
+.btn--primary {
+  @apply bg-white text-(--btn-primary) hover:scale-105 hover:text-white;
+}
+
+.btn--secondary {
+  @apply bg-linear-to-br from-indigo-600 to-purple-600 text-white hover:scale-105;
+}
+
+.btn--tertiary {
+}
+
+/* VARIANTS */
+.btn--outline {
+  @apply bg-transparent border hover:border-white;
+}
+
+.btn--outline.btn--primary {
+  @apply text-(--btn-primary) border-(--btn-primary);
+}
+
+.btn--outline.btn--secondary {
+  @apply text-(--btn-tertiary) border-(--btn-tertiary);
+}
+
+.btn--outline.btn--danger {
+  @apply text-red-600 border-red-600  hover:border-white;
+}
+
+/* GHOST */
+.btn--ghost {
+  @apply bg-transparent;
+}
+
+.btn--ghost.btn--primary {
+  @apply text-black;
+}
+.btn--ghost.btn--secondary {
+  @apply text-white;
+}
+
+.btn--ghost.btn--danger {
+  @apply text-red-600 hover:text-white;
+}
+
+/* DISABLED / LOADING */
+.is-disabled {
+  @apply opacity-50 cursor-not-allowed pointer-events-none;
+}
+
+.btn__spinner {
+  @apply inline-block h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white;
+}
