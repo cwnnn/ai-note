@@ -1,0 +1,52 @@
+@reference "tailwindcss/theme.css";
+
+/* HEADER */
+.header {
+  @apply sticky top-0 z-50 w-full bg-(--coffee-caramel)/80;
+}
+
+/* ÜST SATIR */
+.header-wrapper {
+  @apply flex items-center justify-between py-2;
+}
+
+/* SOL TARAF */
+.header-left {
+  @apply flex items-center gap-5;
+}
+
+/* LOGO */
+.header-logo {
+  @apply grid h-10 w-10 place-items-center rounded-xl bg-white/10 text-lg;
+}
+
+/* TITLE */
+.header-title {
+  @apply text-lg font-semibold text-white;
+}
+
+/* SAĞ TARAF */
+.header-right {
+  @apply flex items-center gap-2;
+}
+
+/* DESKTOP NAV */
+.header-nav-desktop {
+  @apply hidden md:flex items-center gap-2 font-semibold text-white;
+}
+
+/* MOBILE BUTTON */
+.header-mobile-btn {
+  @apply md:hidden inline-flex items-center justify-center text-3xl text-white;
+}
+.header-mobile-btn:hover {
+  @apply bg-white/10;
+}
+
+/* MOBILE MENU */
+.header-mobile {
+  @apply md:hidden bg-(--coffee-caramel);
+}
+.header-mobile-nav {
+  @apply flex flex-col gap-3 py-4 font-semibold text-white items-end;
+}
