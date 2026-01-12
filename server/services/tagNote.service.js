@@ -4,6 +4,7 @@ import { safeJsonParse } from "../utils/safeJsonParse.js";
 import { validateSchema } from "../utils/validateSchema.js";
 import { tagNoteResponseSchema } from "../schemas/tagNote.schema.js";
 import AppError from "../utils/AppError.js";
+import { saveAiResponse } from "../utils/saveAiResponse.js";
 
 const MAX_TAGS = 5;
 
@@ -15,6 +16,8 @@ export async function tagNote(note) {
   const prompt = tagNotePrompt(note);
 
   const aiResponse = await generateContent(prompt);
+  saveAiResponse(note, aiResponse, "success");
+  console.log("backand ai data :", aiResponse);
 
   if (!aiResponse) {
     throw new AppError("AI did not return a response", 502);
