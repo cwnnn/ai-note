@@ -11,6 +11,8 @@ RULES:
 - Language of tags must be English
 - Tags must be short and meaningful
 - maximum 5 tags
+- Do NOT write json 
+
 
 OUTPUT FORMAT:
 {

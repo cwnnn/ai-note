@@ -1,6 +1,7 @@
 # Node modules
 node_modules/
 
+
 # Log dosyaları
 npm-debug.log*
 yarn-debug.log*
@@ -20,3 +21,8 @@ build/
 Thumbs.db
 .idea/
 .vscode/
+
+/data/
+
+
+
