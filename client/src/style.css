@@ -29,8 +29,6 @@ a:hover {
 
 body {
   margin: 0;
-  min-width: 1080px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -39,10 +37,7 @@ h1 {
 }
 
 #app {
-  margin: 0 auto;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  text-align: center;
+  @apply px-4 md:px-16 mx-auto text-center;
 }
 
 @media (prefers-color-scheme: light) {
