@@ -7,7 +7,7 @@ const notesStore = useNotesStore();
 <template>
   <input
     v-model="notesStore.searchQuery"
-    placeholder="Başlık veya etiket ara..."
-    class="px-4 py-2 h-14 w-100 rounded-full backdrop-blur-xs text-white outline-none border duration-200 hover:scale-105 focus:border-3 focus:scale-105 focus:border-(--btn-primary)"
+    placeholder="Search for a title or tag..."
+    class="px-4 py-2 h-14 max-w-100 w-full rounded-full backdrop-blur-xs text-white outline-none border duration-200 hover:scale-105 focus:border-3 focus:scale-105 focus:border-(--btn-primary)"
   />
 </template>
