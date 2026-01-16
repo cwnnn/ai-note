@@ -2,51 +2,51 @@
 
 /* HEADER */
 .header {
-  @apply sticky top-0 z-50 w-full bg-(--coffee-caramel)/80;
+  @apply sticky top-0 z-50 w-full;
 }
 
 /* ÜST SATIR */
 .header-wrapper {
-  @apply flex items-center justify-between py-2;
+  @apply grid grid-cols-[1fr_1fr_1fr] md:grid-cols-[3fr_10fr_1fr] items-center py-2 gap-4;
 }
 
 /* SOL TARAF */
-.header-left {
-  @apply flex items-center gap-5;
-}
 
 /* LOGO */
 .header-logo {
-  @apply grid h-10 w-10 place-items-center rounded-xl bg-white/10 text-lg;
+  @apply grid h-10 w-10 place-items-center rounded-xl  text-lg;
 }
 
 /* TITLE */
 .header-title {
-  @apply text-lg font-semibold text-white;
+  @apply text-lg font-semibold;
+}
+.header-left {
+  @apply flex items-center gap-5 justify-start;
 }
 
 /* SAĞ TARAF */
 .header-right {
-  @apply flex items-center gap-2;
+  @apply flex items-center justify-end gap-2;
+}
+.header-center {
+  @apply w-full;
 }
 
 /* DESKTOP NAV */
 .header-nav-desktop {
-  @apply hidden md:flex items-center gap-2 font-semibold text-white;
+  @apply hidden md:flex items-center gap-2 font-semibold;
 }
 
 /* MOBILE BUTTON */
 .header-mobile-btn {
-  @apply md:hidden inline-flex items-center justify-center text-3xl text-white;
-}
-.header-mobile-btn:hover {
-  @apply bg-white/10;
+  @apply md:hidden inline-flex items-center justify-center text-3xl;
 }
 
 /* MOBILE MENU */
 .header-mobile {
-  @apply md:hidden bg-(--coffee-caramel);
+  @apply md:hidden;
 }
 .header-mobile-nav {
-  @apply flex flex-col gap-3 py-4 font-semibold text-white items-end;
+  @apply flex flex-col gap-3 py-4 font-semibold text-white items-center;
 }

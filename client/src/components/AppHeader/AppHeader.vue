@@ -3,6 +3,9 @@
     <div class="header-wrapper">
       <!-- SOL -->
       <div class="header-left">
+        <button @click="mobileOpen = !mobileOpen" class="header-mobile-btn">
+          ☰
+        </button>
         <slot name="logo">
           <!-- default logo -->
           <div class="header-logo">⚡</div>
@@ -11,16 +14,11 @@
       </div>
 
       <!-- SAĞ -->
-      <div class="header-right">
+      <div class="header-center">
         <!-- Desktop Nav -->
         <nav class="header-nav-desktop">
           <slot name="nav" />
         </nav>
-
-        <!-- Mobile Button -->
-        <button @click="mobileOpen = !mobileOpen" class="header-mobile-btn">
-          ☰
-        </button>
       </div>
       <!-- Actions -->
       <div class="header-right">
